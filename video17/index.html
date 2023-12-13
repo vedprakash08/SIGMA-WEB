@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selectors</title>
+    <style>
+        /* Element selector */
+        /* div{
+            color: red;
+        } */
+
+        /* class selector */
+        .red{
+            color: red;
+            background-color: yellow;
+        }
+        /* .green{
+            color: aqua;
+            background-color: black;
+        } */
+
+        /* id selector */
+        #ids{
+            color: blue;
+            background-color: black;
+        }
+
+        /* child selector */
+        div > p{ /*it works only in case of when it is first child not on grand and so on child*/
+            color: red;
+            background-color: blueviolet;
+        }
+
+        /* descendent selector */
+        div p{ /* wo bus uska child ho chahhe koi si bhi peedi ho*/
+            color: violet;
+            background-color: pink;
+        }
+
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 1;
+        }
+
+        /* pseudo selector and its types */
+        a:visited{ /*color after visiting*/
+            color: yellow;
+        }
+        a:link{ /*initial color*/
+            color: red;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{ /*color on click*/
+            color: aqua;
+        }
+        p:first-child{ /*jaha bhi p first child hai waha krdo*/
+            color: rgb(34, 34, 26);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        i am a div
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, incidunt?</p>
+            <p>cbdskfkhdk h u g</p>
+        </article>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint laboriosam perspiciatis optio voluptatum nisi? Ipsam quia velit vitae, saepe quisquam officia numquam est et similique amet tempore maiores facilis animi!</p> -->
+       
+    </div>
+    <div id="ids" class="green">
+        i am also div but i am second
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <br>
+    <a href="cricbuzz.com">Cricbuzz</a>
+</body>
+</html>
