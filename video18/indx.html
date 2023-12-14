@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: yellow;
+        }
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 40px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: blue;
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 40px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+    <p>margin collapsing means that it will take the margin of only one which maximum </p>
+    <div>
+        <img src="img.png" alt="margin collapse" >
+        <br>
+    <caption>margin collapse</caption>
+    </div>
+</body>
+</html>
