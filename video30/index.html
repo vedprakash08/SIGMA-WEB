@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+</head>
+<style>
+    :root{
+        --color:rgb(81, 219, 17);
+        --seccolor:rgb(158, 192, 37);
+        --defpa:20px;
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    ul li{
+        /* padding: 23px; */
+        padding: var(--defpa,23px);
+        border: 2px solid var(--color,blue);
+        background-color: rgb(184, 202, 151);
+    }
+    div p{
+        /* --seccolor:red; --> This will work as an local variable and over ride the global variable*/
+        background-color: var(--seccolor);
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, rem eaque accusamus ipsum optio fugiat tempore corrupti ab explicabo eum distinctio magni ad fugit veritatis ullam facilis perspiciatis amet. Fuga ex minima dolores deleniti? Laborum, cupiditate.
+        </p>
+    </div>
+</body>
+</html>
