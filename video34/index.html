@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            /* display: flow-root; */
+            overflow: auto;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        div:nth-child(3){
+            /* it will clear the space in the given f=direction */
+            /* clear: right; */
+            background-color: aqua;
+        }
+        img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/1208877516/photo/old-man-and-the-sea.jpg?s=612x612&w=0&k=20&c=uehCCP7wTeem0mD90LXCgbDb5kRwCOcAXq8UB4_Li7M=" alt="boatman" width="230">
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum itaque illum enim quidem eaque laboriosam corporis dolorum laborum deleniti quis earum ut deserunt, dicta sint a quaerat cumque officia harum rerum. Autem, delectus.</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum dolore sapiente veniam quasi architecto dolorum ipsa aliquam, aut unde officiis, est natus soluta iste quaerat reiciendis doloribus a, quia fugit sed deleniti id doloremque. Distinctio qui officiis maiores ex! Quisquam dicta incidunt tempora exercitationem esse ex libero vel ad alias id, fugiat quia quasi explicabo officia voluptatum et quae molestias corporis, quam itaque! Iure exercitationem culpa numquam et incidunt atque odit quas libero corrupti, expedita veritatis impedit unde doloremque, aliquam molestias dolore minima pariatur quisquam adipisci labore quia, repellendus debitis beatae doloribus! Omnis non quasi dolor minima dolore, laborum molestias dignissimos quaerat deserunt fugit. Ex laboriosam numquam illum harum omnis et, quam nemo? Tenetur dolore doloremque doloribus veniam sequi neque iste harum pariatur blanditiis animi amet alias, repudiandae nesciunt dolorum hic earum possimus est sint voluptates asperiores odit dicta praesentium sit. Aliquid totam nemo rem, dicta voluptatum pariatur. Facere corrupti pariatur earum impedit. Officiis rem optio, eius temporibus cum quisquam quae expedita hic cupiditate atque dolorem, doloremque ad corporis. Nemo, ex quasi quam modi possimus impedit ad explicabo sed saepe atque, hic fuga tempora ducimus. Iusto, ipsa! Consequuntur accusamus, quam animi earum iusto autem cupiditate excepturi, ratione ea officiis quia? Molestiae enim eos maxime tempora iste dolorum eius architecto, atque repellat reiciendis modi nemo quod consequatur, officiis minus temporibus adipisci fugiat, corporis vero quo sed! Ipsum rerum inventore iure unde error ut enim, debitis incidunt, magni et molestiae. Odit molestiae fuga laboriosam voluptas nisi similique natus doloribus accusantium facere inventore aspernatur voluptatum autem pariatur, ullam, repellendus sit blanditiis asperiores quaerat distinctio consectetur maiores ex saepe? Omnis velit ipsam vitae blanditiis, est asperiores enim quis, deserunt dolore sint nesciunt, sit illum! Soluta, sed animi, reiciendis in quasi iure necessitatibus alias temporibus placeat cum suscipit illum repellat, obcaecati dolorum asperiores eos! Velit cum delectus consectetur explicabo, ipsa id magni amet animi doloribus pariatur ex voluptatem unde, deleniti dolore, quis inventore. Nobis magni quis minima fugiat nam, suscipit facilis tenetur eligendi autem est! Similique, quidem.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
