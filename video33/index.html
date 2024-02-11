@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&display=swap');
+        :root{
+            --color: rgba(0, 0, 0, 0.877);
+            --seccolor: rgba(144, 142, 155, 0.815);
+            --shade:rgb(146, 135, 135);
+            --textshade:rgb(34, 12, 160);
+
+        }
+        /* :root{
+            --color: rgba(0, 0, 255, 0.568);
+            --seccolor: black;
+            --shade:white;
+            --textshade:rgb(0, 153, 255);
+
+        } */
+
+        body{
+            background-color: var(--color);
+        }
+        .nav{
+            margin: auto;
+            border: 2px solid var(--seccolor);
+            width: 1420px;
+            background-color:var(--seccolor);
+            box-shadow: 12px 5px 30px 10px var(--shade);
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            margin-left: -20px;
+            /* background-color: black; */
+        }
+        ul li{
+            margin: 5px 81px;
+            color: white;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        ul li:first-child{
+            font-size: 32px;
+            text-shadow: 7px 4px 4px var(--textshade);
+        }
+        ul li a{
+            color: white;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Company</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Gallery</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Other</a></li>
+        </ul>
+    </div>
+</body>
+</html>
