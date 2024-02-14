@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+            /* flex-direction: column; */
+
+            /* To center the multiple lines  */
+            /* align-content: center; */
+            /* There is no justify content  */
+            row-gap: 5px;
+            column-gap: 5px;
+            /* gap: 3px 5px; */
+
+            /* flex-flow: column wrap; */
+        }
+        .item{
+            /*default value = 0*/
+            /* flex-grow: 1;  */
+            flex-shrink: 1;
+            height: 92px;
+            width: 92px;
+            background-color: cyan;
+            border: 2px solid black;
+            /* margin: 8px; */
+        }
+        /* Item property */
+        /* Jiska order sbse jyada wo sbse end mei and vice-versa  or default order is zero.*/
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            /* ek particular item ko set krna ho to */
+            align-self: flex-end;
+        }
+        .item4{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item order-3">5</div>
+        <div class="item">6</div>
+        <div class="item"></div>
+        <div class="item order-1">100</div>
+        <!-- <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+    </div>
+</body>
+</html>
