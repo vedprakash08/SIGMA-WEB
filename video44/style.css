@@ -1,0 +1,139 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.logo img{
+    height: 67px;
+    width: 200px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 15px;
+}
+ul li span a{
+    text-decoration: none;
+    color: black;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    margin-top: 50px;
+}
+.heading h1{
+    padding-left: 490px;
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.para{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.Box{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.box{
+    width: 320px;
+    height: 50px;
+    border: 2px solid none;        
+    background-color: #00b6d1;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.l{
+    margin-top: 80px;
+    margin-left: 180px;
+}
+.f{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 80px;
+}
+.s{
+    margin-top: 87px;
+    margin-left:10px ;
+}
+
+.down{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+.bo{
+    height: 150px;
+    width: 320px;
+    border: 2px solid none;
+    background-color: rgb(236, 239, 243);
+}
+.lang{
+    padding-top: 12px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:650;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 58px;
+}
+.link{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.bit{
+    height: 35px;
+    width: 140px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bit a{
+    color: white;
+    text-decoration: none;
+}
+.bit32{
+    background-color: #00b6d1;
+}
+.bit64{
+    background-color: rgb(66, 202, 66);
+}
+.lang{
+    margin-bottom: 5px;
+}
+.englang{
+    margin-bottom: 53px;
+}
+.sublang{
+    display: flex;
+    justify-content: center;
+    font-weight:100;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
