@@ -37,3 +37,4 @@ console.log(x.endsWith('n'));
 
 let f="Please give Rs100";
 console.log(f.slice(14))
+// console.log(f.replace(4,"h"))
