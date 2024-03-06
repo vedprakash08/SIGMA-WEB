@@ -34,3 +34,24 @@ let f=document.getElementsByClassName("box")
 Array.from(f).forEach(g=>{
     g.style.backgroundColor = getRandomColor();
 })
+
+
+
+
+// various method of console
+console.assert(50>70, "This is very good")
+
+function person(firstName,lastName){
+    this.firstName=firstName,
+    this.lastName=lastName
+}
+
+const me = new person("Vipin","Sharma")
+const brother= new person("Mukul", "Sharma")
+console.table(me);
+console.table(brother)
+console.log("hdg")
+console.log(typeof document)
+console.log(typeof window)
+
+document.body.childNodes;
