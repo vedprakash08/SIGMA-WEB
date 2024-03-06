@@ -7,20 +7,30 @@ let a={
 }
 
 
-function getRandomColor(){
-    //a+r(b-a)
-    let val1=Math.floor(255*Math.random())
-    let val2=Math.floor(255*Math.random())
-    let val3=Math.floor(255*Math.random())
-    return `rgb(${val1},${val2},${val3})`
-}
-let f=document.getElementsByClassName("box")
-Array.from(f).forEach(g=>{
-    g.style.backgroundColor = getRandomColor();
-})
+// function getRandomColor(){
+//     //a+r(b-a)
+//     let val1=Math.floor(255*Math.random())
+//     let val2=Math.floor(255*Math.random())
+//     let val3=Math.floor(255*Math.random())
+//     return `rgb(${val1},${val2},${val3})`
+// }
+// let f=document.getElementsByClassName("box")
+// Array.from(f).forEach(g=>{
+//     g.style.backgroundColor = getRandomColor();
+// })
 
 
 // let e= document.body.firstElementChild.querySelectorAll(".box");
 // e.forEach(b => {
 //     b.style.backgroundColor = a[Math.floor(5*Math.random())]
 // });
+
+
+function getRandomColor(){
+    // 16777215 is a white color in decimal
+    return "#"+ Math.floor(Math.random()*16777215).toString(16);
+}
+let f=document.getElementsByClassName("box")
+Array.from(f).forEach(g=>{
+    g.style.backgroundColor = getRandomColor();
+})
