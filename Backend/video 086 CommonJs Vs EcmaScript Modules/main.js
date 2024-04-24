@@ -23,9 +23,9 @@
 // using ES6
 
 // way to import named export
-// import {a, b} from "./mymodule.js";
-// console.log(a);
-// console.log(b);
+import {a, b} from "./mymodule.js";
+console.log(a);
+console.log(b);
 
 // // way to import default export --> in this we can use any name while importing
 // import vipin from "./mymodule.js"
@@ -34,5 +34,5 @@
 
 //using commonJs
 
-const x = require("./mymodule2.js");
-console.log(x);
+// const x = require("./mymodule2.js");
+// console.log(x);
